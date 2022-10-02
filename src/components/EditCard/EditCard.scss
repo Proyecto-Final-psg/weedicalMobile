@@ -1,0 +1,47 @@
+.edit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.create {
+    width: 100%;
+    height: 85vh;
+    height: max-content;
+    min-height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form-create {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-edit{
+    background-color: rebeccapurple;
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.card-edit img{
+    width: 100%;    
+}
+
+.title-text{
+    margin-left: 26px;
+}
+

@@ -1,0 +1,151 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+
+
+.custom-title{
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-decoration-color: rgba(0, 128, 0, 0.301);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-title span{
+    font-size: 34px;
+}
+
+table thead tr {
+    background: rgb(68, 143, 63);
+    background: linear-gradient(0deg, rgba(68, 143, 63, 1) 0%, rgba(26, 59, 22, 1) 100%);
+    color: white;
+    width: auto;
+}
+
+table thead tr abbr {
+    color: white;
+}
+
+.metricas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+#stock,
+#userMgm,
+#bestSell,
+#userCrud,
+#topCustomer,
+#orders {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    overflow-y: auto;
+    display: block;
+    overflow-x: hidden;
+
+    @include respond-to('medium') {
+        // background-color: green;
+        height: 100%;
+        width: auto;
+        
+        /* Hide the horizontal scroll */
+    }
+
+    @include respond-to('large'){
+        position: sticky;
+        top: 80px;
+    }
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+}
+
+.iconMenu {
+    padding-left: 10px;
+}
+
+.ancho {
+    width: 500px;
+
+}
+
+.lower-10 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: min-content;
+    // margin: 20px;
+}
+
+.circular-chart {
+    width: 300px;
+}
+
+.sells-year {
+    // min-width: 400px;
+    // max-width: 700px;
+    width: 80%;
+    // margin: 40px;
+
+}
+
+
+.datas {
+    margin-top: 1% !important
+}
+
+.datas {
+    // width: 40%;
+    //   height: 96vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 50px;
+    //   background-color: lightgreen;
+}
+
+.datas h1 {
+    font-size: 40px;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.is-active {
+    background-color: green($color: white);
+}
+
+@media (max-width: 525px) {
+    .menu {
+        height: auto;
+    }
+}
+
+#admin-table-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+#admin-table-header span{
+    margin-left: 4px;
+}

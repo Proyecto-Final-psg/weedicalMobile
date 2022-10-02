@@ -1,0 +1,152 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+.cmp-purchases-status {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    @include respond-to('medium') {
+        margin-right: 10px;
+        // box-shadow: 2px 2px 2px rgba(226, 216, 216, 0.648);
+        // position: absolute;
+        // right: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+    }
+}
+
+.span {
+    margin-bottom: 10px;
+}
+
+.cmp-purchases-img-puntos {
+    width: 100px;
+}
+
+.camion {
+    position: absolute;
+    right: 25px;
+    width: 51px;
+    margin-right: 10px;
+
+    @include respond-to('medium') {
+        top: 25px;
+        right: -2px;
+        /* margin-top: 13px; */
+        width: 51px;
+        position: relative;
+
+    }
+}
+
+.puntos {
+    position: relative;
+    bottom: 8px;
+    right: 45px;
+}
+
+.cmp-purchases-img-despachado {
+    width: 25px;
+    height: 25px;
+
+    @include respond-to('medium') {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        top: 62px;
+        margin-left: 12px;
+
+    }
+}
+
+.cmp-purchases-img-mensaje {
+    display: none;
+
+    @include respond-to('medium') {
+        // position: absolute;
+        width: 31px;
+        // top: 3px;
+        margin-left: 1px;
+        cursor: pointer;
+    }
+}
+
+.tag {
+    width: 100%;
+}
+
+.cmp-purchases-img {
+    object-fit: cover;
+    object-position: top center;
+    width: 37px;
+
+}
+
+.container-card-inside {
+    width: 60%;
+    height: 50%;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.cmp-purchases-container {
+    width: auto;
+    height: 120px;
+
+    @include respond-to('medium') {
+        width: auto;
+    }
+}
+
+.media-left {
+    right: 160px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.container-card {
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    cursor: pointer;
+
+    @include respond-to('medium') {
+        height: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+}
+
+.container-imagenes-pequeñas {
+    // display: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+
+    @include respond-to('medium') {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+.container-imagenPrincipal {
+    width: 40px;
+    @include respond-to('medium') {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+    }
+}

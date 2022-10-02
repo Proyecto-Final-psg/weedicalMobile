@@ -1,0 +1,38 @@
+.create {
+    width: 100%;
+    height: 85vh;
+    height: max-content;
+    min-height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.title-edit {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-create {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+

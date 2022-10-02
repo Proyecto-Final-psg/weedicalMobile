@@ -1,0 +1,52 @@
+.pagination {
+    display: flex;
+}
+
+.active-pag {
+    background-color: #438a00;
+    border-radius: 10%;
+    height: 34px;
+    border: none;
+    color: white;
+    margin-top: 5px;
+}
+
+.inactive {
+    background-color: rgba(128, 128, 128, 0);
+    color: black;
+    height: 30px;
+}
+
+.pags {
+    font-family: inherit;
+    font-size: 15px;
+    background: transparent;
+    color: black;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.paginatorMove {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.paginatorMove:hover {
+    background-color: rgb(36, 92, 73);
+    color: white;
+    transition: 0.6s;
+
+}

@@ -1,0 +1,65 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    min-height: 73vh;
+    
+
+}
+
+#logo{
+
+    width: 30%;
+    // filter: drop-shadow(0px 9px 5px #22204163);
+}
+
+
+.about h1{
+    font-size: 50px;
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(88,128,87);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.572) 0%, rgba(0,0,0,1) 100%);
+}
+
+.team span{
+  width: 80%;
+  text-align: center;
+}
+
+.devs{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+   @include respond-to('medium') {
+    flex-wrap: nowrap;
+
+    }
+}
+
+
+.rowAbout{
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

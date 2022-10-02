@@ -1,0 +1,6 @@
+{
+  "appId": "com.weedical.app",
+  "appName": "weedica",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

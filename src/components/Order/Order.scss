@@ -1,0 +1,124 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+.coupon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.coupon button{
+    margin: 10px;
+    width: fit-content;    
+}
+
+.coupon input{
+    height: 40px;
+    border: 1px solid rgb(177, 177, 177);
+}
+
+.order-container {
+    height: auto;
+    width: 100vw;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    display: none;
+
+    @include respond-to('small') {
+        display: block;
+        width: 100px;
+        opacity: 0.4;
+        margin-top: -40px;
+        margin-left: -12px;
+    }
+}
+
+.form-container {
+    padding: 30px;
+    padding-top: 50px;
+    background-color: rgb(245, 243, 243);
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-order {
+    border: none;
+    font-weight: bold;
+}
+
+
+.field-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hr-order {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-style: solid;
+}
+
+.control-order {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-top: 1%;
+}
+
+.button-submit-order {
+    margin-top: 20px;
+    right: 15%;
+    bottom: 10%;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    background-color: #43a047;
+    border-color: transparent;
+    color: #fff;
+}
+
+.no-submit {
+    background-color: #c2c5c3;
+}
+
+
+
+.button-submit-order:hover {
+    background-color: #216345;
+}
+
+.no-submit:hover {
+    background-color: #c2c5c3;
+}
+
+.items-order {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.input-order {
+    padding-right: 2%;
+    min-width: 100px;
+}
+
+.control-address {
+    padding-top: 1%;
+}

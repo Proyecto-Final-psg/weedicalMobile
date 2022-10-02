@@ -1,0 +1,18 @@
+.star_container {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    margin-left: 5px;
+}
+
+.stars {
+    margin: auto;
+}
+
+input[type='radio'] {
+    display: none;
+}
